@@ -12,12 +12,28 @@
 
     curl_close($curl);
 
-    $apiResult = json_decode($result,true);
+    $apiResult =(json_decode($result,true));
 
-    foreach($apiResult as $x => $x_value){
-        echo $x.' '.$x_value ;
-        echo "<br> <br>";
+    
+    foreach($apiResult as $key => $value){
+        echo "key here is ".$key;
+        echo "<br>";
+        echo "<br>";
+        echo "value here is ".$value;
+        echo "<br> ";
+        echo "<br>";
     }
+   
+
+   $date = $apiResult['date'];
+
+   echo "today's date is ".$date;
+
+   echo "<br><br>";
+
+   $description = $apiResult['explanation'];
+
+   echo $description
 
     
 
