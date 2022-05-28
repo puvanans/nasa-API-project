@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <?php include model.php; ?>
+        <?php include "model.php"; ?>
+
         <h1>This be the web main page</h1>
         <div>
             <p>
@@ -17,6 +18,14 @@
                     echo $date;
                 ?>
             </p>
+            <p>
+                <?php 
+                    echo $description;
+                ?>
+            </p>
+
+            <img src= 
+
         </div>
     </body>
 </html>

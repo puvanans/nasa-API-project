@@ -23,17 +23,33 @@
         echo "<br> ";
         echo "<br>";
     }
-   
+    
 
    $date = $apiResult['date'];
 
-   echo "today's date is ".$date;
+   //echo "today's date is ".$date;
 
    echo "<br><br>";
 
    $description = $apiResult['explanation'];
 
-   echo $description
+   //echo $description
+
+   $imageURL = $apiResult["url"];
+
+   $curlImage = curl_init();
+
+   curl_setopt($curlImage,CURLOPT_URL,$imageURL);
+
+   curl_setopt($curlImage,CURLOPT_RETURNTRANSFER,true);
+
+   $image = curl_exec($curlImage);
+
+   curl_close($curlImage);
+
+   return $image;
+
+   
 
     
 
