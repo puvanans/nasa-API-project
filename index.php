@@ -23,8 +23,13 @@
                     echo $description;
                 ?>
             </p>
+            <div>
+                <?php
+                    echo $image;
+                ?>
+            </div>
 
-            <img src= 
+            <img src="'data:image/jpeg;base64,'.'$image.'";>
 
         </div>
     </body>
