@@ -33,9 +33,8 @@
 
    $imageURL = $apiResult["url"];
 
-   $imageData = file_get_contents($imageURL);
 
-   $image = base64_encode ($imageData);
+   
 
 
 

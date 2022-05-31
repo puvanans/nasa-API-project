@@ -11,7 +11,7 @@
     <body>
         <?php include "model.php"; ?>
 
-        <h1>This be the web main page</h1>
+        <h1>Welcome to the Page</h1>
         <div>
             <p>
                 <?php
@@ -24,12 +24,15 @@
                 ?>
             </p>
             <div>
-                <?php
-                    echo $image;
-                ?>
+               <img src="<?php echo $imageURL;?>"/>
+            </div>
+            <div>
+                <p>
+                    <?php  ?>
+                </p>
             </div>
 
-            <img src="'data:image/jpeg;base64,'.'$image.'";>
+            
 
         </div>
     </body>
