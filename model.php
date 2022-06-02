@@ -14,6 +14,8 @@
 
     $apiResult =(json_decode($result,true));
 
+   
+    
     /*
     foreach($apiResult as $key => $value){
         echo "The key here is - ".$key;
@@ -29,6 +31,8 @@
 
     
    $description = $apiResult['explanation'];
+
+   $title = $apiResult['title'];
 
 
    $imageURL = $apiResult["url"];

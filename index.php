@@ -11,20 +11,13 @@
     <body>
         <?php include "model.php"; ?>
 
-        <h1>Welcome to the Page</h1>
         <div>
-            <p>
-                <?php
-                    echo $date;
-                ?>
-            </p>
-            <p>
-                <?php 
-                    echo $description;
-                ?>
-            </p>
+            
             <div>
+               <h1><?php echo $title; ?></h1>
+               <h3><?php echo $date; ?></h3>
                <img src="<?php echo $imageURL;?>"/>
+               <p><?php echo $description; ?></p>
             </div>
             <div>
                 <p>
