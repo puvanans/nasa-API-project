@@ -21,7 +21,6 @@
         //through the json_decode(true) function.
 
     
-
     /*
     foreach ($newsArray as $key => $value){
 
@@ -33,15 +32,14 @@
         echo "<br>";
     }
     */
-    $newsArticles = $newsArray["articles"];
-        //the newsArray derivede from JSON returned from the API contains a multidimensional array 
+    
+    $articlesArray = $newsArray ["articles"];
+        //the newsArray derived from JSON returned from the API contains a multidimensional array 
         //as the value for the "articles".
         //This multidimensional array is contained in the variable $newsArticles
     
-    var_dump($newsArticles);
-    
-    echo gettype($newsArticles);
-
+    //var_dump($newsArticles);
+   
     /*
     foreach ($newsArticles as $no => $article){
         echo "The key here is - ".$no;
@@ -52,7 +50,22 @@
         echo "<br>";
     }
     */
+    //$articleCount = count($articlesArray)-1;
 
+    for ($i = 0; $i<5;$i++){
+        $headlines = $articlesArray[$i];
+
+        //print_r($headlines);
+
+        
+        echo $headlines["title"];
+        echo "<br>";
+        echo $headlines["url"];
+        echo "<br>";
+        echo $headlines["urlToImage"];
+        echo "<br><br>";
+
+    }
 
 
 ?>
