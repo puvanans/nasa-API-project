@@ -15,6 +15,7 @@
             
             <div>
                <h1><?php echo $title; ?></h1>
+               <h3><?php echo "by ".$photographer;?></h3>
                <h3><?php echo $date; ?></h3>
                <img src="<?php echo $imageURL;?>"/>
                <p><?php echo $description; ?></p>

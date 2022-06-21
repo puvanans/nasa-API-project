@@ -29,6 +29,8 @@
 
    $date = $apiResult['date'];
 
+   $photographer = $apiResult['copyright'];
+
     
    $description = $apiResult['explanation'];
 
