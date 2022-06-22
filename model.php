@@ -8,11 +8,11 @@
 
     curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
 
-    $result = curl_exec($curl);
+    $imageResult = curl_exec($curl);
 
     curl_close($curl);
 
-    $apiResult =(json_decode($result,true));
+    $apiResult =(json_decode($imageResult,true));
 
    
     
