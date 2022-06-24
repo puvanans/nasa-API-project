@@ -6,7 +6,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <?php include "model.php"; ?>
@@ -14,7 +14,8 @@
         <div>
             <div>
                 <h1>
-                    Today's NEWS Headlines
+                    Today's Headlines
+                    <h3><?php echo $date; ?></h3>
                 </h1>
                 <p>
                     <?php 
@@ -29,13 +30,17 @@
                             
                             echo "<br>";
                             ?>
-                            <img src = "<?php echo $articleImage;?>"/>
+                            <div class = "newsContainer">
+                                <div>
+                                    <img class = "thumbnail" src="<?php echo $articleImage;?>"/>
+                                </div>
+
+                                <div class = "headlineContainer" >
+                                    <a class = "headline"  href ="<?php echo $articleLink;?>" target="_blank" > <?php echo $headline; ?></a>
+                                </div>  
+                            </div>    
                             <?php
-                            echo "<br>";
-                            ?> 
-                            <a href ="<?php echo $articleLink;?>"> <?php echo $headline; ?></a>
-                            <?php
-                            echo "<br><br>";
+                           
                         
                         }
                         
@@ -44,10 +49,11 @@
             </div>
 
             <div>
+               <h1>Today's Photograph</h1>
+               <img src="<?php echo $imageURL;?>"/>
                <h1><?php echo $title; ?></h1>
                <h3><?php echo "by ".$photographer;?></h3>
                <h3><?php echo $date; ?></h3>
-               <img src="<?php echo $imageURL;?>"/>
                <p><?php echo $description; ?></p>
             </div>
             

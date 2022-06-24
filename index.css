@@ -1,0 +1,27 @@
+.thumbnail 
+{
+    background-color: aquamarine;
+    padding: 30px;
+    width: 30%;
+    height: 30%;
+    
+}
+
+.headline 
+{
+    float: left;
+    font-size: larger;
+    text-decoration: none;
+    padding: ;
+}
+
+.headlineContainer
+{
+    float: right;
+    background-color: aquamarine;
+}
+
+.newsContainer
+{
+    justify-content: center;
+}
