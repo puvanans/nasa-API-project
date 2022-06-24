@@ -14,21 +14,19 @@
         <div>
             <div>
                 <h1>
-                    Today's Headlines
-                    <h3><?php echo $date; ?></h3>
+                    Today's Headlines Ennada nadakkuthu inga
                 </h1>
-                <p>
+                <h3><?php echo $date; ?></h3>
+                <div>
                     <?php 
+                    
                         for ($i = 0; $i<5;$i++){
                             $articleHeadlines = $articlesArray[$i];
                     
                             $headline = $articleHeadlines["title"];
                             $articleLink = $articleHeadlines["url"];
                             $articleImage = $articleHeadlines["urlToImage"];
-                    
-                            
-                            
-                            echo "<br>";
+
                             ?>
                             <div class = "newsContainer">
                                 <div>
@@ -45,16 +43,22 @@
                         }
                         
                     ?>
-                </p>
+                </div>
             </div>
 
             <div>
                <h1>Today's Photograph</h1>
-               <img src="<?php echo $imageURL;?>"/>
+               <div class="nasaPhoto">
+                    <img src="<?php echo $imageURL;?>"/>
+               </div>
                <h1><?php echo $title; ?></h1>
                <h3><?php echo "by ".$photographer;?></h3>
                <h3><?php echo $date; ?></h3>
-               <p><?php echo $description; ?></p>
+               <div class = "description">
+                    <p>
+                        <?php echo $description; ?>
+                    </p>
+               </div>
             </div>
             
 
