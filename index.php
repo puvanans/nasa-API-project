@@ -3,23 +3,28 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>
+            Puvanan's Daily page
+        </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" type="text/css" href="index.css"/>
     </head>
     <body>
         <?php include "model.php"; ?>
         <?php include "news.php"; ?>
         <div>
             <div>
-                <h1>
-                    Today's Headlines Ennada nadakkuthu inga
+                <h1 class = "mainHeader">
+                    Welcome to the daily page
                 </h1>
-                <h3><?php echo $date; ?></h3>
+                <h2 class = "mainHeader">
+                    Today's Headlines 
+                </h2>
+                <h3 class = "dateHeader"><?php echo $date; ?></h3>
                 <div>
                     <?php 
-                    
+
                         for ($i = 0; $i<5;$i++){
                             $articleHeadlines = $articlesArray[$i];
                     
@@ -28,13 +33,16 @@
                             $articleImage = $articleHeadlines["urlToImage"];
 
                             ?>
-                            <div class = "newsContainer">
-                                <div>
-                                    <img class = "thumbnail" src="<?php echo $articleImage;?>"/>
+                            <div>
+                                <div class = imageContainer>
+                                    <img class = thumbnail src="<?php echo $articleImage;?>"/>
+                                    <a class = "headline"  href ="<?php echo $articleLink;?>" target="_blank" > <?php echo $headline; ?></a>
+                                    <br><br>
                                 </div>
 
                                 <div class = "headlineContainer" >
-                                    <a class = "headline"  href ="<?php echo $articleLink;?>" target="_blank" > <?php echo $headline; ?></a>
+                                   
+
                                 </div>  
                             </div>    
                             <?php
@@ -47,14 +55,15 @@
             </div>
 
             <div>
-               <h1>Today's Photograph</h1>
-               <div class="nasaPhoto">
-                    <img src="<?php echo $imageURL;?>"/>
+               <br><br>
+               <h1 class = "mainHeader">Today's Photograph</h1>
+               <div class = "nasaPhotoContainer">
+                    <img class="nasaPhotograph" src="<?php echo $imageURL;?>"/>
                </div>
-               <h1><?php echo $title; ?></h1>
-               <h3><?php echo "by ".$photographer;?></h3>
-               <h3><?php echo $date; ?></h3>
-               <div class = "description">
+               <h1 class = "mainHeader" ><?php echo $title; ?></h1>
+               <h3 class = "mainHeader"><?php echo "by ".$photographer;?></h3>
+               <h3 class = "dateHeader"><?php echo $date; ?></h3>
+               <div>
                     <p>
                         <?php echo $description; ?>
                     </p>

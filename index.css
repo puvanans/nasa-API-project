@@ -1,18 +1,25 @@
-.thumbnail 
+.imageContainer
 {
-  
-    padding: 30px;
-    width: 30%;
-    height: 30%;
+    border-radius:30px;
+    padding: 10px;
     
 }
 
+.thumbnail 
+{
+    border-radius: 30px;
+    width: 20%;
+    height: 20%;
+}
+
+
 .headline 
 {
-    float: left;
+    float: right;
     font-size: larger;
     text-decoration: none;
-    padding: 25px; ;
+    padding: 60px 25px 25px 25px; 
+    
 }
 
 .headlineContainer
@@ -21,19 +28,29 @@
    
 }
 
-.newsContainer
+.nasaPhotograph
 {
-    justify-content: center;
+    border-radius: 30px;
+    height:60%;
+    width:60%;
     
 }
 
-.nasaPhoto
-{
-    background-color: aqua;
-    height: 50%;
-    width: 50%;
+.nasaPhotoContainer
+{   
+    text-align: center;
+    padding: 100px 100px;
+    background-color: grey;
+    border-radius: 30px;
 }
-.description
+
+.mainHeader
 {
     background-color: aquamarine;
+    text-align: center;
+}
+
+.dateHeader
+{
+    text-align: right;
 }
