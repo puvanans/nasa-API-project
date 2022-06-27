@@ -1,3 +1,47 @@
+.body
+{
+    background-color: black;
+}
+
+.titleHeader
+{
+    
+    color:white;
+    text-align: center;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.nasaPhotograph
+{
+    border-radius: 0%;
+    
+    
+}
+
+.nasaPhotoContainer
+{   
+    text-align: center;
+    background-color: black;
+    border-radius: 0px;
+}
+
+.mainHeader
+{
+    background-color: black;
+    text-align: center;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 100;
+}
+
+.dateHeader
+{
+    text-align: right;
+}
+
 .imageContainer
 {
     border-radius:30px;
@@ -7,6 +51,8 @@
 
 .thumbnail 
 {
+    border:2px;
+    border-style: solid;
     border-radius: 30px;
     width: 20%;
     height: 20%;
@@ -18,6 +64,7 @@
     float: right;
     font-size: larger;
     text-decoration: none;
+    color: bisque;
     padding: 60px 25px 25px 25px; 
     
 }
@@ -28,29 +75,8 @@
    
 }
 
-.nasaPhotograph
+.description
 {
-    border-radius: 30px;
-    height:60%;
-    width:60%;
-    
+    color: white;
 }
 
-.nasaPhotoContainer
-{   
-    text-align: center;
-    padding: 100px 100px;
-    background-color: grey;
-    border-radius: 30px;
-}
-
-.mainHeader
-{
-    background-color: aquamarine;
-    text-align: center;
-}
-
-.dateHeader
-{
-    text-align: right;
-}

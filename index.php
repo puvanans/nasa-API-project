@@ -8,16 +8,35 @@
         </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="index.css"/>
+        <style>
+            .nasaPhotoContainer
+            {
+                background-image: url("pexels-philippe-donn-1257860.jpg");
+                padding:500px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+            }
+        </style>
     </head>
-    <body>
+    <body class = "body">
         <?php include "model.php"; ?>
         <?php include "news.php"; ?>
         <div>
             <div>
-                <h1 class = "mainHeader">
+                
+                <div class = "nasaPhotoContainer">
+                <h1 class = "titleHeader">
                     Welcome to the daily page
                 </h1>
+                    
+               </div>
                 <h2 class = "mainHeader">
                     Today's Headlines 
                 </h2>
@@ -25,7 +44,7 @@
                 <div>
                     <?php 
 
-                        for ($i = 0; $i<5;$i++){
+                        for ($i = 0; $i<10;$i++){
                             $articleHeadlines = $articlesArray[$i];
                     
                             $headline = $articleHeadlines["title"];
@@ -57,13 +76,11 @@
             <div>
                <br><br>
                <h1 class = "mainHeader">Today's Photograph</h1>
-               <div class = "nasaPhotoContainer">
-                    <img class="nasaPhotograph" src="<?php echo $imageURL;?>"/>
-               </div>
+               
                <h1 class = "mainHeader" ><?php echo $title; ?></h1>
                <h3 class = "mainHeader"><?php echo "by ".$photographer;?></h3>
                <h3 class = "dateHeader"><?php echo $date; ?></h3>
-               <div>
+               <div class = "description">
                     <p>
                         <?php echo $description; ?>
                     </p>
