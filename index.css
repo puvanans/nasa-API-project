@@ -1,7 +1,31 @@
+*
+{
+    margin:0px;
+    padding:0px;
+}
+
 .body
 {
     background-color: black;
+    margin: 0px;
+    
 }
+
+.nasaPhotoContainer
+            {
+                margin:0px;
+                padding-top:500px;
+                padding-bottom: 500px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+            }
+
+
+
+
 
 .titleHeader
 {
@@ -44,6 +68,9 @@
 
 .imageContainer
 {
+    border:1px;
+    border-style: solid;
+    border-color: grey;
     border-radius:30px;
     padding: 10px;
     

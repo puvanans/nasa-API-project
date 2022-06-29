@@ -12,28 +12,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="index.css"/>
-        <style>
-            .nasaPhotoContainer
-            {
-                background-image: url("pexels-philippe-donn-1257860.jpg");
-                padding:500px;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-
-            }
-        </style>
     </head>
     <body class = "body">
         <?php include "model.php"; ?>
         <?php include "news.php"; ?>
-        <div>
-            <div>
-                
-                <div class = "nasaPhotoContainer">
+                <div class = "nasaPhotoContainer" style=" background-image: url('<?php echo $imageURL; ?>');">
                 <h1 class = "titleHeader">
-                    Welcome to the daily page
+                    Welcome 
                 </h1>
                     
                </div>
@@ -70,26 +55,29 @@
                         }
                         
                     ?>
-                </div>
             </div>
 
             <div>
                <br><br>
                <h1 class = "mainHeader">Today's Photograph</h1>
                
-               <h1 class = "mainHeader" ><?php echo $title; ?></h1>
-               <h3 class = "mainHeader"><?php echo "by ".$photographer;?></h3>
-               <h3 class = "dateHeader"><?php echo $date; ?></h3>
+               <h1 class = "mainHeader" >
+                    <?php echo $title; ?>
+               </h1>
+               <h3 class = "mainHeader">
+                    <?php echo $photographer;?>
+               </h3>
+               <h3 class = "dateHeader">
+                    <?php echo $date; ?>
+               </h3>
                <div class = "description">
+                    <h1 class = "mainHeader">
+                        About the Photo
+                    </h1>
                     <p>
                         <?php echo $description; ?>
                     </p>
                </div>
             </div>
-            
-
-            
-
-        </div>
     </body>
 </html>
