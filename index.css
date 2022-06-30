@@ -10,18 +10,40 @@
     margin: 0px;
     
 }
+.welcomeCard
+{
+    background-image: url('images/rehab-house-sunset.jpg');
+    margin:0px;
+    padding-top:400px;
+    padding-bottom:400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
+
+.transition
+{
+    background-color: antiquewhite;
+    margin:0px;
+    padding-top:400px;
+    padding-bottom:400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .nasaPhotoContainer
-            {
-                margin:0px;
-                padding-top:500px;
-                padding-bottom: 500px;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-
-            }
+{
+    margin:0px;
+    padding-top:500px;
+    padding-bottom: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cove
+}
 
 
 

@@ -16,11 +16,20 @@
     <body class = "body">
         <?php include "model.php"; ?>
         <?php include "news.php"; ?>
-                <div class = "nasaPhotoContainer" style=" background-image: url('<?php echo $imageURL; ?>');">
-                <h1 class = "titleHeader">
-                    Welcome 
-                </h1>
-                    
+                <div class = "welcomeCard">
+                    <h1 class = "titleHeader">
+                        Welcome 
+                    </h1>
+                </div>
+                <div class = 'transition'>
+                    <h1 class ='titleHeader' style = 'color:black'>
+                         Please keep scrolling down
+                    </h1>
+                </div>
+                <div class = "nasaPhotoContainer" style=" background-image: url('<?php echo $imageURL; ?>');"> 
+                    <h1 class = 'titleHeader'>
+                        Astronomy Picture of the Day
+                    </h1>  
                </div>
                 <h2 class = "mainHeader">
                     Today's Headlines 
