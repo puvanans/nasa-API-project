@@ -26,15 +26,12 @@
                          Please keep scrolling down
                     </h1>
                 </div>
-                <div class = "nasaPhotoContainer" style=" background-image: url('<?php echo $imageURL; ?>');"> 
-                    <h1 class = 'titleHeader'>
-                        Astronomy Picture of the Day
-                    </h1>  
-               </div>
-                <h2 class = "mainHeader">
-                    Today's Headlines 
-                </h2>
-                <h3 class = "dateHeader"><?php echo $date; ?></h3>
+                
+               <div class = newsHeader>
+                    <h2 class = "titleHeader" style = 'color:black; font-size:100 px; font-weight: bolder;'>
+                        Today's Headlines 
+                    </h2>
+                </div>
                 <div>
                     <?php 
 
@@ -65,24 +62,29 @@
                         
                     ?>
             </div>
+            
+            <div class = "nasaPhotoContainer" style=" background-image: url('<?php echo $imageURL; ?>');"> 
+                    <h1 class = 'titleHeader'>
+                        Astronomy Picture of the Day
+                    </h1>  
+                    
+            </div>
 
             <div>
                <br><br>
-               <h1 class = "mainHeader">Today's Photograph</h1>
-               
-               <h1 class = "mainHeader" >
-                    <?php echo $title; ?>
-               </h1>
-               <h3 class = "mainHeader">
-                    <?php echo $photographer;?>
-               </h3>
-               <h3 class = "dateHeader">
-                    <?php echo $date; ?>
-               </h3>
                <div class = "description">
                     <h1 class = "mainHeader">
                         About the Photo
                     </h1>
+                    <h1 class = "titleHeader" >
+                        <?php echo $title; ?>
+                    </h1>
+                    <h3 class = "titleHeader">
+                        <?php echo $photographer;?>
+                    </h3>
+                    <h3 class = "dateHeader">
+                        <?php echo $date; ?>
+                    </h3>
                     <p>
                         <?php echo $description; ?>
                     </p>

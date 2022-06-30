@@ -12,10 +12,10 @@
 }
 .welcomeCard
 {
-    background-image: url('images/rehab-house-sunset.jpg');
+    background-image: url('images/beaufort-beach-driftwood.jpg');
     margin:0px;
-    padding-top:400px;
-    padding-bottom:400px;
+    padding-top:500px;
+    padding-bottom:600px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,7 +42,18 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cove
+    background-size: cover;
+}
+.newsHeader
+{
+    background-image:url('images/NEWS.jpg');
+    margin:0px;
+    padding-top:500px;
+    padding-bottom: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -85,7 +96,10 @@
 
 .dateHeader
 {
-    text-align: right;
+    color: white;
+    text-align: center;
+    font-family: 'League Gothic', sans-serif;
+    font-weight: 100;
 }
 
 .imageContainer
