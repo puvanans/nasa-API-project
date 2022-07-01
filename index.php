@@ -22,15 +22,21 @@
                     </h1>
                 </div>
                 <div class = 'transition'>
-                    <h1 class ='titleHeader' style = 'color:black'>
-                         Please keep scrolling down
+                    <h1 class ='titleHeader' style = 'color:black; padding:25px'>
+                        What's this page about?
                     </h1>
+                    <button class = 'Button'>
+                        thatra clapsa
+                    </button>
                 </div>
                 
-               <div class = newsHeader>
-                    <h2 class = "titleHeader" style = 'color:black; font-size:100 px; font-weight: bolder;'>
+               <div class = 'newsHeader'>
+                    <h1 class = "titleHeader" style = 'color:black; font-size:100 px; font-weight: bolder;'>
                         Today's Headlines 
-                    </h2>
+                    </h1>
+                    <button class = 'Button'>
+                        thatra clapsa
+                    </button>
                 </div>
                 
             
@@ -38,6 +44,9 @@
                     <h1 class = 'titleHeader'>
                         Astronomy Picture of the Day
                     </h1>  
+                    <button class = 'Button'>
+                        thatra clapsa
+                    </button>
                     
                     
             </div>

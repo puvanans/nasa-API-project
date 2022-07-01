@@ -33,6 +33,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+}
+
+.Button
+{
+    padding: 15px 32px;
+    border-radius: 25px;
+    background-color: antiquewhite;
+}
+
+.newsHeader
+{
+    text-align: center;
 }
 .nasaPhotoContainer
 {
@@ -70,6 +83,17 @@
     font-weight: 100;
 }
 
+.headlinePage
+{
+    
+    color:white;
+    text-align: center;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding: 50px;
+}
+
 .nasaPhotograph
 {
     border-radius: 0%;
@@ -104,21 +128,26 @@
 
 .imageContainer
 {
-    border:1px;
+    background-color:wheat;
     border-style: solid;
-    border-color: grey;
+    border-color: white;
     border-radius:30px;
-    padding: 10px;
+    padding:10px;
+    margin:10px;
+    
     
 }
 
 .thumbnail 
 {
     border:2px;
+    border-color: white;
     border-style: solid;
     border-radius: 30px;
     width: 20%;
     height: 20%;
+    
+    
 }
 
 
@@ -127,16 +156,11 @@
     float: right;
     font-size: larger;
     text-decoration: none;
-    color: bisque;
+    color: black;
     padding: 60px 25px 25px 25px; 
     
 }
 
-.headlineContainer
-{
-    float: right;
-   
-}
 
 .description
 {

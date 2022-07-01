@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>NASA Astronomy Picture</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,8 +19,11 @@
             This be the NASA display page
         </h1>
         <div class = "description">
-            <div>
-                <img src ='<?php echo $imageURL;?>'
+            <div style = 'text-align:center'>
+                <img src ='<?php echo $imageURL;?>'>
+                <button class = 'Button' >
+                        thatra clapsa
+                </button>
             </div>
                     <h1 class = "mainHeader">
                         About the Photo
