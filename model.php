@@ -37,8 +37,9 @@
    $title = $apiResult['title'];
 
 
-   $imageURL = $apiResult["hdurl"];
+   $imageURL = $apiResult["url"];
 
+   $hdImageURL= $apiResult["hdurl"];
 
    
 

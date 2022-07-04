@@ -22,31 +22,31 @@
                     </h1>
                 </div>
                 <div class = 'transition'>
-                    <h1 class ='titleHeader' style = 'color:black; padding:25px'>
+                    <h1 class ='titleHeader' style = 'color:black; padding:25px;'>
                         What's this page about?
                     </h1>
-                    <button class = 'Button'>
-                        thatra clapsa
-                    </button>
+                    <a class = 'buttonBlack'>
+                        LEARN MORE
+                    </a>
                 </div>
                 
                <div class = 'newsHeader'>
-                    <h1 class = "titleHeader" style = 'color:black; font-size:100 px; font-weight: bolder;'>
+                    <h1 class = "titleHeader" style = 'color:black;padding:25px; font-size:100 px; font-weight: bolder;'>
                         Today's Headlines 
                     </h1>
-                    <button class = 'Button'>
-                        thatra clapsa
-                    </button>
+                    <a href = 'newsDisplay.php' target = '_blank' class = 'buttonBlack'>
+                        READ HEADLINES
+                    </a>
                 </div>
                 
             
-            <div class = "nasaPhotoContainer" style=" background-image: url('<?php echo $imageURL; ?>');"> 
-                    <h1 class = 'titleHeader'>
-                        Astronomy Picture of the Day
+            <div class = "nasaPhotoContainer" style=" background-image: url('<?php echo $hdImageURL; ?>');"> 
+                    <h1 class = 'titleHeader' style = 'padding:25px;'>
+                       NASA Astronomy Picture of the Day
                     </h1>  
-                    <button class = 'Button'>
-                        thatra clapsa
-                    </button>
+                    <a href = 'nasaAPOD.php' target = '_blank'class = 'button' >
+                        LEARN MORE
+                    </a>
                     
                     
             </div>

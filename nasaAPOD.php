@@ -21,10 +21,11 @@
         <div class = "description">
             <div style = 'text-align:center'>
                 <img src ='<?php echo $imageURL;?>'>
-                <button class = 'Button' >
-                        thatra clapsa
-                </button>
+                
             </div>
+                <a href = 'index.php' target ='_self' class = 'button' >
+                        HOMEbvt3ebt4dq
+                </a>
                     <h1 class = "mainHeader">
                         About the Photo
                     </h1>
@@ -37,7 +38,7 @@
                     <h3 class = "dateHeader">
                         <?php echo $date; ?>
                     </h3>
-                    <p>
+                    <p style = 'color:white;'>
                         <?php echo $description; ?>
                     </p>
         </div>

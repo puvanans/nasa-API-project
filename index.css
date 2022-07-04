@@ -8,6 +8,7 @@
 {
     background-color: black;
     margin: 0px;
+    padding: 0px;
     
 }
 .welcomeCard
@@ -15,7 +16,7 @@
     background-image: url('images/beaufort-beach-driftwood.jpg');
     margin:0px;
     padding-top:400px;
-    padding-bottom:400px;
+    padding-bottom:600px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,8 +28,8 @@
 {
     background-color: antiquewhite;
     margin:0px;
-    padding-top:400px;
-    padding-bottom:400px;
+    padding-top:500px;
+    padding-bottom:500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,13 +37,54 @@
     text-align: center;
 }
 
-.Button
+.button
 {
     padding: 15px 32px;
     border-radius: 25px;
-    background-color: antiquewhite;
+    background-color: rgba(255,255,255, 0.3);
+    color:white;
+    text-decoration: none;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
 }
 
+.button:hover
+{
+    padding: 17px 34px;
+    border-radius: 25px;
+    background-color: white;
+    color:black;
+    text-decoration: none;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+
+}
+
+.buttonBlack
+{
+    padding: 15px 32px;
+    border-radius: 25px;
+    background-color: rgba(255,255,255, 0.3);
+    color:black;
+    text-decoration: none;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.buttonBlack:hover
+{
+    padding: 17px 34px;
+    border-radius: 25px;
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
 .newsHeader
 {
     text-align: center;
@@ -50,8 +92,8 @@
 .nasaPhotoContainer
 {
     margin:0px;
-    padding-top:500px;
-    padding-bottom: 500px;
+    padding-top:600px;
+    padding-bottom: 600px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -94,11 +136,11 @@
     padding: 50px;
 }
 
-.nasaPhotograph
+.nasaPhoto
 {
-    border-radius: 0%;
-    
-    
+    justify-content:center;
+    text-align: center;  
+    padding-top: 500px;
 }
 
 .nasaPhotoContainer
@@ -126,6 +168,10 @@
     font-weight: 100;
 }
 
+.description
+{
+    text-align:center;
+}
 .imageContainer
 {
     background-color:wheat;
@@ -162,8 +208,5 @@
 }
 
 
-.description
-{
-    color: white;
-}
+
 
